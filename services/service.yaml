@@ -8,3 +8,7 @@ spec:
   - targetPort: 80 # port on a pod, where our application runs
     port: 80 # port on a service
     nodePort: 30008 # port on a node
+  selector:
+    app: nginx
+    tier: frondend
+    env: prod
